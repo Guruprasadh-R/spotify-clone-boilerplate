@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.idea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+nav {
+    margin-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+nav dl {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav dt, nav dd {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+nav img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+nav h4 {
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+nav ol {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+nav ol li {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #181818;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+footer img {
+    width: 200px;
+}
+
+nav dt:hover, nav dd:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+nav ol li:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        padding-left: 10px;
+        align-items: center;
+    }
+
+    nav dl {
+        width: 90%;
+    }
+
+    nav img {
+        width: 20px;
+        height: 20px;
+    }
+
+    nav ol li {
+        font-size: 0.9rem;
+    }
+
+    footer img {
+        width: 150px;
+    }
+
+    .idea {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        padding-left: 5px;
+    }
+
+    nav ol li {
+        font-size: 0.8rem;
+    }
+
+    footer img {
+        width: 120px;
+    }
+
+    .idea {
+        width: 30px;
+    }
+}
